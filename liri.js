@@ -155,6 +155,7 @@ let logSongResults = function(output) {
 }
 
 
+
 let logMovieResults = function(output) {
     let result = `  Result: ${output.title}, ${output.year}, ${output.rating}, ${output.country}, ${output.language}, ${output.plot}, ${output.actors} `;
     fs.appendFile('./log.txt', result + '\n', 'utf8', function(error) {
